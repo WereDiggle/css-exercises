@@ -3,7 +3,7 @@
   color: hsl(0, 100%, 50%);
 }
 
-.small-para {
+.para.small-para {
   font-size: 14px;
 }
 
@@ -11,7 +11,8 @@
   font-size: 22px;
 }
 
-.confirm {
+
+.button.confirm {
   background: green;
   color: white;
   font-weight: bold;
@@ -23,7 +24,11 @@
   font-size: 20px;
 }
 
-.child {
+/*
+This has higher specificity because it uses 2 class selectors
+whereas div.text uses 1 class and 1 type selector.
+*/
+.text .child {
   color: red;
   font-size: 14px;
 }
